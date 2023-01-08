@@ -21,7 +21,7 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-   @include('admin.js'); 
+    @include('admin.js');
     <!-- End custom js for this page -->
 </body>
 
