@@ -1,4 +1,4 @@
-<section class="services-area pt-top border-bottom pb-20 mb-60">
+<section class="services-area pt-top border-bottom pb-20 mb-60" id="services">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8">
@@ -16,7 +16,8 @@
                     </div>
                     <div class="cat-cap">
                         <h5><a href="services.html">We collect your clothes</a></h5>
-                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is
+                            gleaming clothes!</p>
                     </div>
                 </div>
             </div>
@@ -27,7 +28,8 @@
                     </div>
                     <div class="cat-cap">
                         <h5><a href="services.html">Wash your clothes</a></h5>
-                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is
+                            gleaming clothes!</p>
                     </div>
                 </div>
             </div>
@@ -38,7 +40,8 @@
                     </div>
                     <div class="cat-cap">
                         <h5><a href="services.html">Get delivery</a></h5>
-                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is
+                            gleaming clothes!</p>
                     </div>
                 </div>
             </div>

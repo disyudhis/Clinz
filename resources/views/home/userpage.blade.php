@@ -1,12 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Laundry | Teamplate</title>
+    <title>Clinz Laundry</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="home/assets/img/favicon.ico">
 
@@ -29,16 +29,7 @@
 
 <body>
     <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="home/assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('home.preloader');
     <!-- Preloader Start -->
     {{-- header start --}}
     @include('home.header');
@@ -54,13 +45,13 @@
         @include('home.offer-services');
         <!-- Offer-services End  -->
         <!--? Want To work -->
-        @include('home.work-offer');
+        {{-- @include('home.work-offer'); --}}
         <!-- Want To work End -->
         <!-- Testimonials_start -->
-        @include('home.testimonial')
+        {{-- @include('home.testimonial') --}}
         <!-- Testimonials_end -->
         <!--? Company achievement Start -->
-        @include('home.achievement');
+        {{-- @include('home.achievement'); --}}
         <!-- Company achievement End -->
         <!--? About Area  -->
         @include('home.about');
@@ -81,46 +72,46 @@
 
     <!-- JS here -->
 
-    <script src="home/./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="home/assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
-    <script src="home/./assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="home/./assets/js/popper.min.js"></script>
-    <script src="home/./assets/js/bootstrap.min.js"></script>
+    <script src="home/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="home/assets/js/popper.min.js"></script>
+    <script src="home/assets/js/bootstrap.min.js"></script>
     <!-- Jquery Mobile Menu -->
-    <script src="home/./assets/js/jquery.slicknav.min.js"></script>
+    <script src="home/assets/js/jquery.slicknav.min.js"></script>
 
     <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="home/./assets/js/owl.carousel.min.js"></script>
-    <script src="home/./assets/js/slick.min.js"></script>
+    <script src="home/assets/js/owl.carousel.min.js"></script>
+    <script src="home/assets/js/slick.min.js"></script>
     <!-- One Page, Animated-HeadLin -->
-    <script src="home/./assets/js/wow.min.js"></script>
-    <script src="home/./assets/js/animated.headline.js"></script>
-    <script src="home/./assets/js/jquery.magnific-popup.js"></script>
+    <script src="home/assets/js/wow.min.js"></script>
+    <script src="home/assets/js/animated.headline.js"></script>
+    <script src="home/assets/js/jquery.magnific-popup.js"></script>
 
     <!-- Date Picker -->
-    <script src="home/./assets/js/gijgo.min.js"></script>
+    <script src="home/assets/js/gijgo.min.js"></script>
     <!-- Nice-select, sticky -->
-    <script src="home/./assets/js/jquery.nice-select.min.js"></script>
-    <script src="home/./assets/js/jquery.sticky.js"></script>
+    <script src="home/assets/js/jquery.nice-select.min.js"></script>
+    <script src="home/assets/js/jquery.sticky.js"></script>
     <!-- Progress -->
-    <script src="home/./assets/js/jquery.barfiller.js"></script>
+    <script src="home/assets/js/jquery.barfiller.js"></script>
 
     <!-- counter , waypoint,Hover Direction -->
-    <script src="home/./assets/js/jquery.counterup.min.js"></script>
-    <script src="home/./assets/js/waypoints.min.js"></script>
-    <script src="home/./assets/js/jquery.countdown.min.js"></script>
-    <script src="home/./assets/js/hover-direction-snake.min.js"></script>
+    <script src="home/assets/js/jquery.counterup.min.js"></script>
+    <script src="home/assets/js/waypoints.min.js"></script>
+    <script src="home/assets/js/jquery.countdown.min.js"></script>
+    <script src="home/assets/js/hover-direction-snake.min.js"></script>
 
     <!-- contact js -->
-    <script src="home/./assets/js/contact.js"></script>
-    <script src="home/./assets/js/jquery.form.js"></script>
-    <script src="home/./assets/js/jquery.validate.min.js"></script>
-    <script src="home/./assets/js/mail-script.js"></script>
-    <script src="home/./assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="home/assets/js/contact.js"></script>
+    <script src="home/assets/js/jquery.form.js"></script>
+    <script src="home/assets/js/jquery.validate.min.js"></script>
+    <script src="home/assets/js/mail-script.js"></script>
+    <script src="home/assets/js/jquery.ajaxchimp.min.js"></script>
 
     <!-- Jquery Plugins, main Jquery -->
-    <script src="home/./assets/js/plugins.js"></script>
-    <script src="home/./assets/js/main.js"></script>
+    <script src="home/assets/js/plugins.js"></script>
+    <script src="home/assets/js/main.js"></script>
 
 </body>
 

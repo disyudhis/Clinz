@@ -1,4 +1,4 @@
-<section class="about-area2 pb-bottom mt-30">
+<section class="about-area2 pb-bottom mt-30" id="about">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
