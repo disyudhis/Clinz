@@ -13,6 +13,9 @@
     z-index: 99;
 }
 
+.main-content {
+    margin: 5px;
+}
 
 /*** Spinner ***/
 #spinner {

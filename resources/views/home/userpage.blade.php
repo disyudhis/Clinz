@@ -29,20 +29,20 @@
 
 <body>
     <!-- ? Preloader Start -->
-    @include('home.preloader');
+    @include('home.preloader')
     <!-- Preloader Start -->
     {{-- header start --}}
-    @include('home.header');
+    @include('home.header')
     {{-- header end --}}
     <main>
         <!--? slider Area Start-->
-        @include('home.slider');
+        @include('home.slider')
         <!-- slider Area End-->
         <!--? Services Area Start -->
-        @include('home.services');
+        @include('home.services')
         <!-- Services End -->
         <!--? Offer-services Start  -->
-        @include('home.offer-services');
+        @include('home.offer-services')
         <!-- Offer-services End  -->
         <!--? Want To work -->
         {{-- @include('home.work-offer'); --}}
@@ -54,15 +54,15 @@
         {{-- @include('home.achievement'); --}}
         <!-- Company achievement End -->
         <!--? About Area  -->
-        @include('home.about');
+        @include('home.about')
         <!-- About Area End -->
         <!--?  Map Area start  -->
-        @include('home.map');
+        @include('home.map')
         <!-- Map Area End -->
     </main>
     <footer>
         <!-- Footer Start-->
-        @include('home.footer-start');
+        @include('home.footer-start')
         <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
