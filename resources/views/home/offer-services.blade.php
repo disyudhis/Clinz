@@ -22,7 +22,7 @@
                             <img src="home/assets/img/icon/offers-icon1.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Cloth laundry</a></h5>
+                            <h5><a href="services.html">Clinz laundry</a></h5>
                             <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!!</p>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                             <img src="home/assets/img/icon/offers-icon1.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Cloth ironing</a></h5>
+                            <h5><a href="services.html">Clinz ironing</a></h5>
                             <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!!</p>
                         </div>
                     </div>

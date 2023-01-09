@@ -6,7 +6,7 @@
                     <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="home/assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.html"><img src="home/assets/img/logo/4.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">
@@ -31,7 +31,7 @@
                             <li><a href="#">- Dry Cleaning</a></li>
                             <li><a href="#">- Dry Clean</a></li>
                             <li><a href="#">- Ironing Services</a></li>
-                            <li><a href="#">- Laundry Service London</a></li>
+                            <li><a href="#">- Laundry Service Bandung</a></li>
                             <li><a href="#">- Laundry App</a></li>
                         </ul>
                     </div>
@@ -61,12 +61,12 @@
                     <div class="footer-copy-right text-center">
                         <p>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>
+                            Copyright &copy Clinz Laundry
+                            {{-- <script>
                                 document.write(new Date().getFullYear());
                             </script> All rights reserved | This template is made with <i
                                 class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                target="_blank">Colorlib</a>
+                                target="_blank">Colorlib</a> --}}
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>

@@ -406,15 +406,17 @@ hr {
 }
 .header-btn2 {
     background: #6785ff;
-    padding: 37px 41px 34px 41px;
+    padding: 10px 50px 10px 50px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1;
     margin: 0;
+    margin-right: 50px;
+    border-radius: 5px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .header-btn2 {
-        padding: 37px 25px 34px 25px;
+        padding: 18px 20px;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

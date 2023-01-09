@@ -3,8 +3,8 @@
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8">
                 <div class="section-tittle text-center mb-55">
-                    <span class="element">Our Process</span>
-                    <h2>This is how we work</h2>
+                    <span class="element">Proses</span>
+                    <h2>Begini cara kerja kami</h2>
                 </div>
             </div>
         </div>

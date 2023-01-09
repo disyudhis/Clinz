@@ -12,17 +12,17 @@
                     <div class="main-menu d-none d-lg-block">
                         <nav>
                             <ul id="navigation">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#map">Map</a></li>
+                                <li class="active"><a href="#">Beranda</a></li>
+                                <li><a href="#about">Tentang Kami</a></li>
+                                <li><a href="#services">Layanan</a></li>
+                                <li><a href="#map">Lokasi</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
             <div class="header-right d-none d-lg-block">
-                <a class="header-btn2" id="logincss" href="{{ route('login') }}">Get Started</a>
+                <a class="header-btn2" id="logincss" href="{{ route('login') }}">Mulai</a>
             </div>
             <!-- Mobile Menu -->
             <div class="col-12">
