@@ -10,8 +10,7 @@
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">
-                                <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                    ornare, eros dolor interdum nulla.</p>
+                                <p>Nikmati pelayanan antar jemput cucian pakaian kotor dalam waktu 24 jam, Clinz akan memberikan pelayanan terbaik. </p>
                             </div>
                         </div>
                         <!-- social -->
@@ -26,7 +25,7 @@
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
                 <div class="single-footer-caption mb-50">
                     <div class="footer-tittle">
-                        <h4>Services </h4>
+                        <h4>Layanan </h4>
                         <ul>
                             <li><a href="#">- Dry Cleaning</a></li>
                             <li><a href="#">- Dry Clean</a></li>
@@ -40,11 +39,11 @@
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
                 <div class="single-footer-caption mb-50">
                     <div class="footer-tittle">
-                        <h4>Get in touch</h4>
+                        <h4>Kontak kami</h4>
                         <ul>
-                            <li class="number"><a href="#">(90) 898 789-8957</a></li>
-                            <li><a href="#">laundry@567.com</a></li>
-                            <li><a href="#">789/A, Green road NYC-9089</a></li>
+                            <li class="number"><a href="#">0812-5675-4342</a></li>
+                            <li><a href="#">Clinz@gmail.com</a></li>
+                            <li><a href="#">Jl.Sukapura,Komp.Palem2,A1.No.1</a></li>
                         </ul>
                     </div>
                 </div>

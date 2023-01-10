@@ -5,7 +5,7 @@
             <!-- Logo -->
             <div class="header-left">
                 <div class="logo">
-                    <a href="#"><img src="home/assets/img/logo/logo.png" alt=""></a>
+                    <a href="#"><img src="home/assets/img/logo/logofigma.jpeg" alt=""></a>
                 </div>
                 <div class="menu-wrapper d-flex align-items-center">
                     <!-- Main-menu -->
