@@ -27,11 +27,10 @@
                     <div class="footer-tittle">
                         <h4>Layanan </h4>
                         <ul>
-                            <li><a href="#">- Dry Cleaning</a></li>
-                            <li><a href="#">- Dry Clean</a></li>
-                            <li><a href="#">- Ironing Services</a></li>
-                            <li><a href="#">- Laundry Service Bandung</a></li>
-                            <li><a href="#">- Laundry App</a></li>
+                            <li><a href="#">- Cuci Kering</a></li>
+                            <li><a href="#">- Layanan Setrika</a></li>
+                            <li><a href="#">- Jasa Laundry Bandung</a></li>
+                            <li><a href="#">- Aplikasi Laundry</a></li>
                         </ul>
                     </div>
                 </div>
