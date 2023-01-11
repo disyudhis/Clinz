@@ -2,33 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Clinz Laundry</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="client/img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="client/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="client/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="client/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="client/css/style.css" rel="stylesheet">
+    @include('client.style')
 </head>
 
 <body>
@@ -39,7 +13,29 @@
 
 
         <!-- Sidebar Start -->
-        @include('client.sidebar')
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <a href="home.html"><img src="home/assets/img/logo/mesin.png" alt=""></a>
+                    {{-- <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Clinz Laundry</h3> --}}
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                </div>
+                <div class="navbar-nav w-100 mt-14">
+                    <a href="{{ url('/view_dashboard') }}" class="nav-item nav-link active"><i
+                            class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/view_order') }}" class="nav-item nav-link"><i
+                            class="fa fa-solid fa-plus me-2"></i>Orders</a>
+                    <a href="{{ url('/view_status') }}" class="nav-item nav-link"><i
+                            class="fas fa-bell me-2"></i>Status</a>
+                    <a href="{{ url('/view_history') }}" class="nav-item nav-link"><i
+                            class="fas fa-history me-2"></i>History</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-wrench me-2"></i>Settings</a>
+                </div>
+            </nav>
+        </div>
+
+
         <!-- Sidebar End -->
 
 
@@ -55,7 +51,7 @@
                 <p class="mx-4">We will use all our strength to shorten the time it takes to, <br>
                     for the laundry to take place</p>
                 <div class="ml-2 mt-4 row">
-                    <div class="col-sm-12 col-lg-4">
+                    <a href="{{ url('/view_status') }}" class="col-sm-12 col-lg-4">
                         {{-- card status --}}
                         <div class="card w-full bg-warning text-light mb-3" style="max-width: 18rem;">
                             <div class="card-header">
@@ -66,9 +62,9 @@
                                 <p class="card-text">Cek Status Pesananmu</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="col-sm-12 col-lg-4">
+                    <a href="{{ url('/view_order') }}" class="col-sm-12 col-lg-4">
                         {{-- card order --}}
                         <div class="card w-full bg-success text-light mb-3" style="max-width: 18rem;">
                             <div class="card-header">
@@ -79,9 +75,9 @@
                                 <p class="card-text">Lakukan Pesanan!</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="col-sm-12 col-lg-4">
+                    <a href="{{ url('/view_history') }}" class="col-sm-12 col-lg-4">
                         {{-- card history --}}
                         <div class="card w-full bg-primary text-light mb-3" style="max-width: 18rem;">
                             <div class="card-header">
@@ -92,30 +88,9 @@
                                 <p class="card-text">Cek pesanan yang sudah selesai</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-
             </div>
-
-            <!-- Sale & Revenue Start -->
-            {{-- @include('client.sales-revenue'); --}}
-            <!-- Sale & Revenue End -->
-
-
-            <!-- Sales Chart Start -->
-            {{-- @include('client.sales-chart'); --}}
-            <!-- Sales Chart End -->
-
-
-            <!-- Recent Sales Start -->
-            {{-- @include('client.sales-start'); --}}
-            <!-- Recent Sales End -->
-
-
-            <!-- Widgets Start -->
-            {{-- @include('client.widget'); --}}
-            <!-- Widgets End -->
 
 
             <!-- Footer Start -->
@@ -132,18 +107,7 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="client/lib/chart/chart.min.js"></script>
-    <script src="client/lib/easing/easing.min.js"></script>
-    <script src="client/lib/waypoints/waypoints.min.js"></script>
-    <script src="client/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="client/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="client/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="client/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="client/js/main.js"></script>
+    @include('client.script')
 </body>
 
 </html>

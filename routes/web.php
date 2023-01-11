@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -19,6 +20,10 @@ use App\Http\Controllers\ProfileController;
 //     return view('welcome');
 // });
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/view_status', [ClientController::class, 'view_status']);
+Route::get('/view_dashboard', [ClientController::class, 'view_dashboard']);
+Route::get('/view_order', [ClientController::class, 'view_order']);
+Route::get('/view_history', [ClientController::class, 'view_history']);
 
 
 Route::get('/dashboard', function () {

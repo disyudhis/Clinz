@@ -7,10 +7,13 @@
         <div class="d-flex align-items-center ms-4 mb-4">
         </div>
         <div class="navbar-nav w-100 mt-14">
-            <a href="#" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-            <a href="#" class="nav-item nav-link"><i class="fa fa-solid fa-plus me-2"></i>Orders</a>
-            <a href="#" class="nav-item nav-link"><i class="fas fa-bell me-2"></i>Status</a>
-            <a href="#" class="nav-item nav-link"><i class="fas fa-history me-2"></i>History</a>
+            <a href="{{ url('/view_dashboard') }}" class="nav-item nav-link "><i
+                    class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a href="{{ url('/view_order') }}" class="nav-item nav-link"><i
+                    class="fa fa-solid fa-plus me-2"></i>Orders</a>
+            <a href="{{ url('/view_status') }}" class="nav-item nav-link"><i class="fas fa-bell me-2"></i>Status</a>
+            <a href="{{ url('/view_history') }}" class="nav-item nav-link"><i
+                    class="fas fa-history me-2"></i>History</a>
             <a href="#" class="nav-item nav-link"><i class="fas fa-wrench me-2"></i>Settings</a>
         </div>
     </nav>
