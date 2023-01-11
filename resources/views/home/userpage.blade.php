@@ -113,6 +113,8 @@
     <script src="home/assets/js/plugins.js"></script>
     <script src="home/assets/js/main.js"></script>
 
+    {{-- active navbar --}}
+  
 </body>
 
 </html>

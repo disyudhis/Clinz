@@ -4,7 +4,7 @@
             <div class="col-xl-7 col-lg-8">
                 <div class="section-tittle text-center mb-55">
                     <span class="element">Services</span>
-                    <h2>Services we offer</h2>
+                    <h2>Layanan yang kami sediakan</h2>
                 </div>
             </div>
         </div>
