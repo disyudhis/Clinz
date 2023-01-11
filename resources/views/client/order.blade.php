@@ -13,8 +13,8 @@
 
 
         <!-- Sidebar Start -->
-         <!-- Sidebar Start -->
-         <div class="sidebar pe-4 pb-3">
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <a href="home.html"><img src="home/assets/img/logo/mesin.png" alt=""></a>
@@ -63,10 +63,57 @@
                                     <input type="number" class="form-control" id="bawahan">
                                 </div>
                             </div>
-                            <div class="row mb-3">
-                                <label for="warna" class="col-sm-2 col-form-select">Warna Pakaian</label>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0">Warna Pakaian</legend>
                                 <div class="col-sm-10">
-                                    <select class="form-select" aria-label="warna">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="warnaPakaian"
+                                            id="warnaPakaian1" value="option1" checked>
+                                        <label class="form-check-label" for="warnaPakaian1">
+                                            Berwarna
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="warnaPakaian"
+                                            id="warnaPakaian2" value="option2">
+                                        <label class="form-check-label" for="warnaPakaian2">
+                                            Tidak Berwarna
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0">Paket Pewangi</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pewangi" id="pewangi1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="pewangi1">
+                                            Paket Biasa
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pewangi" id="pewangi2"
+                                            value="option2">
+                                        <label class="form-check-label" for="pewangi2">
+                                            Parfum ++
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pewangi" id="pewangi3"
+                                            value="option2">
+                                        <label class="form-check-label" for="pewangi3">
+                                            Parfum ++ Ekspres
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <h1 class="fs-5 mb-4 font-bold">Pengiriman</h1>
+                            <div class="row mb-3">
+                                <label for="daerah" class="col-sm-2 col-form-label">Daerah</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" aria-label="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -75,17 +122,53 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="pewangi" class="col-sm-2 col-form-select">Paket Pewangi</label>
+                                <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                                 <div class="col-sm-10">
-                                    <select class="form-select" aria-label="pewangi">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                                    <textarea class="form-control" placeholder="Tuliskan alamat mu" id="alamat" style="height: 150px;"></textarea>
                                 </div>
                             </div>
+                            <div class="row mb-3">
+                                <label for="total" class="col-sm-2 col-form-label">Total Bayar</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-text">Rp</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0">Metode Pembayaran</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="bayar" id="bayar1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="bayar1">
+                                            OVO
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="bayar" id="bayar2"
+                                            value="option2">
+                                        <label class="form-check-label" for="bayar2">
+                                            ShopeePay
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="bayar" id="bayar3"
+                                            value="option2">
+                                        <label class="form-check-label" for="bayar3">
+                                            DANA
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
                             <button type="submit" class="btn btn-primary">Pesan</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+
                         </form>
                     </div>
                 </div>
