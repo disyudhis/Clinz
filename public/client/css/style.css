@@ -42,6 +42,11 @@
     background-color: #009CFF;
 }
 
+.btn.btn-secondary {
+    color: #FFFFFF;
+    background-color: #6c757d;
+}
+
 .btn-square {
     width: 38px;
     height: 38px;
