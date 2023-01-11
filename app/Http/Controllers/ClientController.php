@@ -26,4 +26,8 @@ class ClientController extends Controller
     {
         return view('client.history');
     }
+    public function view_settings()
+    {
+        return view('client.settings');
+    }
 }
