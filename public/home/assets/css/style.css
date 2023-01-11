@@ -2242,15 +2242,22 @@ hr {
     position: relative;
 }
 .main-header .header-left .main-menu ul li.active::before {
+}
+.main-header .header-left .main-menu ul li.active::after{
     background: #6785ff;
     position: absolute;
     content: "";
-    width: 100%;
+    width: 0;
     height: 3px;
     bottom: 0;
     margin: 0 auto;
     left: 0;
     right: 0;
+    transition: 0.3s;
+
+}
+.main-header .header-left .main-menu ul li:hover::after{
+    width: 100%;
 }
 
 
@@ -2275,6 +2282,7 @@ hr {
 }
 .main-header .header-left .main-menu ul ul.submenu > li > a {
     padding: 6px 10px !important;
+    /* display: inline-block; */
     font-size: 15px;
     color: #fdfdfd;
 }

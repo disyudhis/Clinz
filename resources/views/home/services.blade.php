@@ -15,9 +15,8 @@
                         <img src="home/assets/img/icon/services-icon1.svg" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">We collect your clothes</a></h5>
-                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is
-                            gleaming clothes!</p>
+                        <h5><a href="services.html">Pengambilan</a></h5>
+                        <p>Proses otomatis dimulai segera setelah pakaian Anda masuk ke dalam mesin. Hasilnya pakaian bersih sampai ke akar!</p>
                     </div>
                 </div>
             </div>
@@ -27,9 +26,8 @@
                         <img src="home/assets/img/icon/services-icon2.svg" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Wash your clothes</a></h5>
-                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is
-                            gleaming clothes!</p>
+                        <h5><a href="services.html">Pengerjaan</a></h5>
+                        <p>Kami menggunakan sabun yang ramah pada barang-barang anda terbuat dari serat halus yang membutuhkan perawatan khusus.</p>
                     </div>
                 </div>
             </div>
@@ -39,9 +37,8 @@
                         <img src="home/assets/img/icon/services-icon3.svg" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Get delivery</a></h5>
-                        <p>The automated process starts as soon as your clothes go into the machine. The outcome is
-                            gleaming clothes!</p>
+                        <h5><a href="services.html">Pengiriman</a></h5>
+                        <p>Kami berkerja semaksimal mungkin agar pakaian bisa selesai dalam waktu 24jam dan sampai ke depan pintu kamu!</p>
                     </div>
                 </div>
             </div>
