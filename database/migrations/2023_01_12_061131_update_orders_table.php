@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('usertype')->default(0);
-            $table->unique('username');
+        Schema::table('orders', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('warnaPakaian')->references('id')->on('colors');
+            $table->foreign('paketPewangi')->references('id')->on('fragrances');
+            $table->foreign('regionId')->references('id')->on('regions');
         });
     }
 
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        //
     }
 };
