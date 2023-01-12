@@ -45,20 +45,83 @@
 
             {{-- Content Dashboard --}}
             <div class="main-content">
+                <div class="container">
+                    {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
+                    <table class="table table-bordered myTable">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Alamat</th>
+                                <th>Total Bayar</th>
+                                <th>Status</th>
 
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-            <!-- Footer Start -->
-            @include('client.footer')
-            <!-- Footer End -->
         </div>
-        <!-- Content End -->
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.myTable').DataTable({
+                processing: true,
+                serverSide: false,
+                fixedHeader: true,
+                deferRender: true,
+                type: 'GET',
+                destroy: true,
+                paging: true,
+                ajax: "{{ route('status.list') }}",
+                columns: [{
+                        data: 'id',
+                        name: 'id'
+                    },
+                    {
+                        data: 'alamat',
+                        name: 'alamat'
+                    },
+                    {
+                        data: 'totalBayar',
+                        name: 'totalBayar'
+                    },
+                    {
+                        data: 'status',
+                        name: 'status'
+                    },
+
+                    {
+                        data: 'action',
+                        name: 'action',
+
+                        orderable: false,
+                        searchable: false
+                    }
+                ]
+
+            })
+        })
+    </script>
+    </div>
+
+    <!-- Footer Start -->
+    @include('client.footer')
+    <!-- Footer End -->
+    </div>
+    <!-- Content End -->
 
 
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
