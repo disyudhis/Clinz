@@ -43,5 +43,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('status/list', [ClientController::class, 'getAllStatus'])
+    ->name('status.list');
+    
+    Route::get('/statusView/{status}', [ClientController::class, 'show'])->name('statusView');
 Route::get('/redirect', [HomeController::class, 'redirect']);
 require __DIR__ . '/auth.php';

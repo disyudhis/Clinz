@@ -13,6 +13,7 @@ class Orders extends Model
         'jumlahBawahan',
         'warnaPakaian',
         'paketPewangi',
+        'status',
         'alamat',
         'regionId',
         'totalBayar',

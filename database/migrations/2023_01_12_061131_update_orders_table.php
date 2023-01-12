@@ -14,10 +14,21 @@ return new class extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->foreign('user_id')->references('id')->on('users');
+            // $table->unsignedInteger('user_id')->change();
+            $table->unsignedBigInteger('warnaPakaian')->change();
+            $table->unsignedBigInteger('paketPewangi')->change();
+            $table->unsignedBigInteger('regionId')->change();
+            $table->unsignedBigInteger('status')->change();
+            $table->unsignedBigInteger('payment_id')->change();
+        });
+
+        Schema::table('orders', function ($table) {
+            // $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('warnaPakaian')->references('id')->on('colors');
             $table->foreign('paketPewangi')->references('id')->on('fragrances');
             $table->foreign('regionId')->references('id')->on('regions');
+            $table->foreign('status')->references('id')->on('detail_status');
+            $table->foreign('payment_id')->references('id')->on('payments');
         });
     }
 
@@ -28,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('fragrances');
     }
 };
