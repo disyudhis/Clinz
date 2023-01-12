@@ -24,7 +24,7 @@ Route::get('/view_status', [ClientController::class, 'view_status']);
 Route::get('/view_dashboard', [ClientController::class, 'view_dashboard']);
 Route::get('/view_order', [ClientController::class, 'view_order']);
 Route::get('/view_history', [ClientController::class, 'view_history']);
-
+Route::get('/view_settings',[ClientController::class,'view_settings']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

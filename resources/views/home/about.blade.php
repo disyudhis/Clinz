@@ -14,11 +14,11 @@
                         <h2>Tentang kami</h2>
                     </div>
                     <p class="mb-20">
-                        The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!
-                    </p>
-                    <p class="mb-30">The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                        CLINZ adalah solusi laundry. Kami memberikan layanan laundry terbaik kepada pelanggan</p>
+                    <p class="mb-30">
+                        CLINZ menyediakan berbagai pelayanan yang memudahkan anda untuk mencuci pakaian dengan praktis</p>
 
-                    <a href="about.html" class="btn">About Us</a>
+                    <a href="about.html" class="btn">Tentang Kami</a>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8">
                 <div class="section-tittle text-center mb-55">
-                    <span class="element">Services</span>
+                    <span class="element">Layanan</span>
                     <h2>Layanan yang kami sediakan</h2>
                 </div>
             </div>
@@ -22,8 +22,8 @@
                             <img src="home/assets/img/icon/offers-icon1.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Clinz laundry</a></h5>
-                            <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!!</p>
+                            <h5><a href="services.html">Pakaian Bersih Berkilau</a></h5>
+                            <p>Layanan kami adalah yang terbaik dan berkualitas demi menjaga pakaian tetap bersih, harum, dan tidak merusak pakaian</p>
                         </div>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                             <img src="home/assets/img/icon/offers-icon1.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Clinz ironing</a></h5>
-                            <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!!</p>
+                            <h5><a href="services.html">Rapih Wangi Tahan Lama</a></h5>
+                            <p>Pakaian dirapikan menggunakan setrika uap terbaik dan parfum laundry yang wangi tahan lama. Dapatkan pakaian yang lebih halus dan licin seperti baru.</p>
                         </div>
                     </div>
                 </div>
