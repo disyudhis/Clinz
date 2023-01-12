@@ -63,5 +63,57 @@
           </span>
           <span class="menu-title">Dashboard</span>
         </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                        aria-controls="ui-basic">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-laptop"></i>
+                        </span>
+                        <span class="menu-title">Order Control</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/ui-features/buttons.html">Update Order Status</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/ui-features/dropdowns.html">Delete Order</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-security"></i>
+                        </span>
+                        <span class="menu-title">User Control</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="auth">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/samples/blank-page.html">
+                                    Modifikasi User Privilege
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/samples/error-404.html">
+                                    Delete User
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="pages/icons/mdi.html">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-contacts"></i>
+                        </span>
+                        <span class="menu-title">Location</span>
+                    </a>
+                </li>
     </ul>
   </nav>
