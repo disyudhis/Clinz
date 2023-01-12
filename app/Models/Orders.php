@@ -13,12 +13,10 @@ class Orders extends Model
         'jumlahBawahan',
         'warnaPakaian',
         'paketPewangi',
-        'status',
+        // 'status',
         'alamat',
         'regionId',
-        'totalBayar',
+        // 'totalBayar',
         'payment_id'
     ];
 }
-
-

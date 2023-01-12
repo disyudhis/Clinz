@@ -74,7 +74,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link">
+            <a class="nav-link" href="{{url('')}}">
                 <span class="menu-icon">
                     <i class="mdi mdi-account-tie"></i>
                 </span>

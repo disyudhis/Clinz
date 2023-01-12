@@ -48,6 +48,7 @@
             {{-- Content Dashboard --}}
             <div class="main-content">
                 <div class="container">
+                    {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
                     <table class="table table-bordered myTable">
                         <thead>
                             <tr>
@@ -61,7 +62,6 @@
                         <tbody class="text-center">
                         </tbody>
                     </table>
-
                 </div>
             </div>
         </div>
