@@ -19,7 +19,9 @@
                     <a href="home.html"><img src="home/assets/img/logo/mesin.png" alt=""></a>
                     {{-- <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Clinz Laundry</h3> --}}
                 </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
+
+                    {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
+        <div class="d-flex align-items-center ms-4 mb-4">
                 </div>
                 <div class="navbar-nav w-100 mt-14">
                     <a href="{{ url('/view_dashboard') }}" class="nav-item nav-link"><i
@@ -46,8 +48,6 @@
             {{-- Content Dashboard --}}
             <div class="main-content">
                 <div class="container">
-<<<<<<< HEAD
-                    {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
                     <table class="table table-bordered myTable">
                         <thead>
                             <tr>
@@ -61,9 +61,7 @@
                         <tbody class="text-center">
                         </tbody>
                     </table>
-=======
 
->>>>>>> 12a0052c4b609b3f9485adaffe79f9d9797f75ec
                 </div>
             </div>
         </div>
