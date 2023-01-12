@@ -18,7 +18,7 @@
                 <i class="fa fa-bell me-lg-2"></i>
                 {{-- <span class="d-none d-lg-inline-flex">Notification</span> --}}
             </a>
-           
+
         </div>
         <li>
             <x-app-layout>

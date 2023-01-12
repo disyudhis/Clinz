@@ -45,7 +45,9 @@
 
             {{-- Content Dashboard --}}
             <div class="main-content">
+                <div class="container">
 
+                </div>
             </div>
 
             <!-- Footer Start -->

@@ -31,7 +31,8 @@
                             class="fas fa-bell me-2"></i>Status</a>
                     <a href="{{ url('/view_history') }}" class="nav-item nav-link"><i
                             class="fas fa-history me-2"></i>History</a>
-                    <a href="{{ url('/view_settings') }}" class="nav-item nav-link"><i class="fas fa-wrench me-2"></i>Settings</a>
+                    <a href="{{ url('/view_settings') }}" class="nav-item nav-link"><i
+                            class="fas fa-wrench me-2"></i>Settings</a>
                 </div>
             </nav>
         </div>
@@ -157,15 +158,24 @@
                                     </div>
                                     <div class="form-check mb-2">
                                         <input class="form-check-input" type="radio" name="bayar" id="bayar3"
-                                            value="option2">
+                                            value="option3">
                                         <label class="form-check-label" for="bayar3">
                                             DANA
                                         </label>
                                     </div>
                                 </div>
                             </fieldset>
-
-
+                            <div class="row mb-3">
+                                <label for="status" class="col-sm-2 col-form-label">Status</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
                             <button type="submit" class="btn btn-primary">Pesan</button>
                             <button type="reset" class="btn btn-secondary">Reset</button>
 
