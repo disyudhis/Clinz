@@ -16,8 +16,7 @@ class Orders extends Model
         'alamat',
         'regionId',
         'totalBayar',
-        'payment_id'
+        'payment_id',
+        'statusPesanan'
     ];
 }
-
-
