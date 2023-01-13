@@ -4,7 +4,7 @@
         <!-- <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="home/assets/img/logo/mesin.png" alt="logo" /></a> -->
     </div>
     <ul class="nav">
-        <li class="nav-item profile">
+        {{-- <li class="nav-item profile">
             <div class="profile-desc">
                 <div class="profile-pic">
                     <div class="count-indicator">
@@ -53,28 +53,28 @@
                     </a>
                 </div>
             </div>
-        </li>
-        <li class="nav-item nav-category">
+        </li> --}}
+        {{-- <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
-        </li>
-        <li class="nav-item menu-items">
+        </li> --}}
+        {{-- <li class="nav-item menu-items">
             <a class="nav-link" href="index.html">
                 <span class="menu-icon">
                     <i class="mdi mdi-speedometer"></i>
                 </span>
                 <span class="menu-title">Dashboard</span>
             </a>
-        </li>
-        <li class="nav-item menu-items">
+        </li> --}}
+        {{-- <li class="nav-item menu-items">
             <a class="nav-link" href="#">
                 <span class="menu-icon">
                     <i class="mdi mdi-cart-plus"></i>
                 </span>
                 <span class="menu-title">Order Control</span>
             </a>
-        </li>
+        </li> --}}
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('')}}">
+            <a class="nav-link" href="{{ url('/createUser') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-account-tie"></i>
                 </span>
@@ -82,7 +82,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
+            <a class="nav-link" href="{{ url('/location') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-pin"></i>
                 </span>

@@ -30,10 +30,20 @@ Route::get('/view_settings', [ClientController::class, 'view_settings']);
 
 // admin
 // Route::get('/', [AdminController::class, 'index']);
-Route::get('/update_order', [AdminController::class, 'update_order']);
-Route::get('/delete_order', [AdminController::class, 'delete_order']);
-Route::get('/update_user', [AdminController::class, 'update_user']);
+// Route::get('/update_order', [AdminController::class, 'update_order']);
+// Route::get('/delete_order', [AdminController::class, 'delete_order']);
+
+Route::get('/location', [AdminController::class, 'create_location'])->name('location');
+Route::post('/store', [AdminController::class, 'store'])->name('storeLocation');
+Route::get('/getAllDaerah', [AdminController::class, 'getAllDaerah'])->name('getAllDaerah');
+Route::get('/deleteDaerah/{id}', [AdminController::class, 'deleteDaerah'])->name('deleteDaerah');
+
+
+Route::get('/showAllUser', [AdminController::class, 'getAllUser'])->name('showAllUser');
+Route::get('/createUser', [AdminController::class, 'createUser'])->name('createUser');
+Route::post('/update_user/{user}', [AdminController::class, 'update_user'])->name('update_user');
 Route::get('/delete_user', [AdminController::class, 'delete_user']);
+Route::get('/userView/{user}', [AdminController::class, 'showUser'])->name('userView');
 
 // OrderController
 Route::get('/view_order', [OrderController::class, 'index']);
@@ -42,7 +52,6 @@ Route::get('/pengiriman/{order}', [OrderController::class, 'show'])->name('pengi
 Route::post('/updateOrder/{order}', [OrderController::class, 'update'])->name('updateOrder');
 Route::get('/status', [OrderController::class, 'getAllStatus'])->name('status.list');
 Route::get('/order_destroy/{id}', [OrderController::class, 'destroy'])->name('order_destroy');
-
 
 // DetailOrder Controller
 Route::post('/detail-store', [DetailOrderController::class, 'store'])->name('detailStore');

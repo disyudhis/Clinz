@@ -76,7 +76,7 @@ class OrderController extends Controller
             ],
             [
                 'regionId.gt' => 'Pilih daerah terdekatmu!',
-                'alamat' => 'Tulis alamat tujuanmu!',
+                'alamat.required' => 'Tulis alamat tujuanmu!',
                 'payment_id' => 'Pilih metode pembayaran'
             ]
         );
@@ -114,14 +114,16 @@ class OrderController extends Controller
                 END) as status
                  '),
             )
-            // ->where('o.username', auth()->user()->username)
+            ->where('o.user_id', '=', auth()->user()->id)
+            ->where('o.status', '=', 1)
             ->orderBy('id', 'asc')
             ->get();
 
         return DataTables::of($order)
             ->addColumn('action', function ($order) {
+
                 $btn = '<a type="button" href="' . url('/pengiriman') . "/" . $order->id . '" style="padding: 3px 20px" class="btn btn-primary">Bayar</a>
-                <a type="button" href="' . url('order_destroy') . "/" . $order->id . '" style="padding: 3px 20px" class="btn btn-secondary">Hapus</a>';
+                    <a type="button" href="' . url('order_destroy') . "/" . $order->id . '" style="padding: 3px 20px" class="btn btn-secondary">Hapus</a>';
                 return $btn;
             })
             ->make(true);
