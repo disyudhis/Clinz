@@ -1,12 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Client;
 
 use App\Models\Orders;
+use App\Models\DetailOrder;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class OrderController extends Controller
 {
+
+    public function index()
+    {
+        return view('client.order');
+    }
+
     public function store(Request $request)
     {
         $request->validate(
@@ -15,26 +23,53 @@ class OrderController extends Controller
                 'jumlahBawahan' => ['required', 'max:255'],
                 'warnaPakaian' => ['required', 'numeric'],
                 'paketPewangi' => ['required', 'numeric'],
-                'regionId' => ['required', 'numeric'],
-                'alamat' => ['required', 'string'],
-                // 'totalBayar' => ['required'],
-                'paymentId' => ['required'],
             ],
+            [
+                'warnaPakaian' => 'Pilih warna pakaianmu!',
+                'paketPewangi' => 'Pilih jenis pewangi!'
+            ]
         );
 
-        $order = Orders::create([
-            'jumlahAtasan' => $request->jumlahAtasan,
-            'jumlahBawahan' => $request->jumlahBawahan,
-            'warnaPakaian' => $request->warnaPakaian,
-            'paketPewangi' => $request->paketPewangi,
-            'regionId' => $request->regionId,
-            'alamat' => $request->alamat,
-            'totalBayar' => $request->totalBayar,
-            'paymentId' => $request->paymentId,
-        ]);
+        $detail = new DetailOrder;
+        $order = new Orders;
 
-        $orders = Orders::paginate();
+        $totalBayar = 0;
+        if ($request->warnaPakaian == 1) {
+            $detail->totalBayar = ($request->jumlahAtasan * 200) + ($request->jumlahBawahan * 200);
+            if ($request->paketPewangi == 1) {
+                $totalBayar = $detail->totalBayar = ($request->jumlahAtasan * 100) + ($request->jumlahBawahan * 100);
+                // return $totalBayar;
+            } else if ($request->paketPewangi == 2) {
+                $totalBayar = $detail->totalBayar = ($request->jumlahAtasan * 300) + ($request->jumlahBawahan * 300);
+                // return $totalBayar;
+            } else if ($request->paketPewangi == 3) {
+                $totalBayar = $detail->totalBayar = ($request->jumlahAtasan * 500) + ($request->jumlahBawahan * 500);
+                // return $totalBayar;
+            }
+        } else if ($request->warnaPakaian == 2) {
+            $detail->totalBayar = ($request->jumlahAtasan * 100) + ($request->jumlahBawahan * 100);
+            if ($request->paketPewangi == 1) {
+                $totalBayar = $detail->totalBayar = ($request->jumlahAtasan * 100) + ($request->jumlahBawahan * 100);
+                // return $totalBayar;
+            } else if ($request->paketPewangi == 2) {
+                $totalBayar = $detail->totalBayar = ($request->jumlahAtasan * 300) + ($request->jumlahBawahan * 300);
+                // return $totalBayar;
+            } else if ($request->paketPewangi == 3) {
+                $totalBayar = $detail->totalBayar = ($request->jumlahAtasan * 500) + ($request->jumlahBawahan * 500);
+                // return $totalBayar;
+            }
+        }
 
-        return view('client.status', compact('orders'));
+        $order->user_id = auth()->user()->id;
+        $order->jumlahAtasan = $request->jumlahAtasan;
+        $order->jumlahBawahan = $request->jumlahBawahan;
+        $order->warnaPakaian = $request->warnaPakaian;
+        $order->paketPewangi = $request->paketPewangi;
+        $detail->totalBayar = $totalBayar;
+        $order->save();
+        $detail->save();
+
+        // return view('client.pengiriman');
+        return redirect()->route('pengiriman')->with('status', 'Pesanan berhasil');
     }
 }

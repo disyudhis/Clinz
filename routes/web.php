@@ -1,8 +1,11 @@
 <?php
 
-use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Client\DetailOrderController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\Client\OrderController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -20,18 +23,27 @@ use App\Http\Controllers\ProfileController;
 //     return view('welcome');
 // });
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/view_status', [ClientController::class, 'view_status']);
+Route::get('/view_status', [ClientController::class, 'view_status'])->name('view_status');
 Route::get('/view_dashboard', [ClientController::class, 'view_dashboard']);
-Route::get('/view_order', [ClientController::class, 'view_order']);
 Route::get('/view_history', [ClientController::class, 'view_history']);
 Route::get('/view_settings', [ClientController::class, 'view_settings']);
 
 // admin
-Route::get('/', [AdminController::class, 'index']);
+// Route::get('/', [AdminController::class, 'index']);
 Route::get('/update_order', [AdminController::class, 'update_order']);
 Route::get('/delete_order', [AdminController::class, 'delete_order']);
 Route::get('/update_user', [AdminController::class, 'update_user']);
 Route::get('/delete_user', [AdminController::class, 'delete_user']);
+
+// OrderController
+Route::get('/view_order', [OrderController::class, 'index']);
+Route::post('/order-store', [OrderController::class, 'store'])->name('orderStore');
+
+
+// DetailOrder Controller
+Route::get('/pengiriman', [DetailOrderController::class, 'index'])->name('pengiriman');
+Route::post('/detail-store', [DetailOrderController::class, 'store'])->name('detailStore');
+Route::post('/update', [DetailOrderController::class, 'update'])->name('detailUpdate');
 // Route::get('/', [])
 
 Route::get('/dashboard', function () {
@@ -44,9 +56,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('status/list', [ClientController::class, 'getAllStatus'])
-    ->name('status.list');
-    
-    Route::get('/statusView/{status}', [ClientController::class, 'show'])->name('statusView');
+// Route::get('status/list', [ClientController::class, 'getAllStatus'])
+//     ->name('status.list');
+
+// Route::get('/statusView/{status}', [ClientController::class, 'show'])->name('statusView');
 Route::get('/redirect', [HomeController::class, 'redirect']);
 require __DIR__ . '/auth.php';

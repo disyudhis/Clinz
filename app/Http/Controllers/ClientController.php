@@ -18,11 +18,6 @@ class ClientController extends Controller
         return view('client.home');
     }
 
-    public function view_order()
-    {
-        return view('client.order');
-    }
-
     public function view_history()
     {
         return view('client.history');
@@ -31,6 +26,8 @@ class ClientController extends Controller
     {
         return view('client.settings');
     }
+
+ 
 
     public function getAllStatus()
     {
@@ -44,8 +41,5 @@ class ClientController extends Controller
             )
             ->orderBy('id', 'asc')
             ->get();
-
-
-            
     }
 }
