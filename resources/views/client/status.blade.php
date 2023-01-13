@@ -19,7 +19,9 @@
                     <a href="home.html"><img src="home/assets/img/logo/mesin.png" alt=""></a>
                     {{-- <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Clinz Laundry</h3> --}}
                 </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
+
+                    {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
+        <div class="d-flex align-items-center ms-4 mb-4">
                 </div>
                 <div class="navbar-nav w-100 mt-14">
                     <a href="{{ url('/view_dashboard') }}" class="nav-item nav-link"><i

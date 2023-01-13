@@ -18,7 +18,7 @@
                     <p class="mb-30">
                         CLINZ menyediakan berbagai pelayanan yang memudahkan anda untuk mencuci pakaian dengan praktis</p>
 
-                    <a href="about.html" class="btn">Tentang Kami</a>
+                    <a href="about.html" class="btn">Baca selengkapnya</a>
                 </div>
             </div>
         </div>

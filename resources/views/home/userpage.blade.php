@@ -48,6 +48,7 @@
         {{-- @include('home.work-offer'); --}}
         <!-- Want To work End -->
         <!-- Testimonials_start -->
+        @include('home.testimonial')
         {{-- @include('home.testimonial') --}}
         <!-- Testimonials_end -->
         <!--? Company achievement Start -->
@@ -114,7 +115,7 @@
     <script src="home/assets/js/main.js"></script>
 
     {{-- active navbar --}}
-  
+
 </body>
 
 </html>
