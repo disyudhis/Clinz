@@ -85,7 +85,7 @@ class OrderController extends Controller
             ],
             [
                 'regionId.gt' => 'Pilih daerah terdekatmu!',
-                'alamat' => 'Tulis alamat tujuanmu!',
+                'alamat.required' => 'Tulis alamat tujuanmu!',
                 'payment_id' => 'Pilih metode pembayaran'
             ]
         );
