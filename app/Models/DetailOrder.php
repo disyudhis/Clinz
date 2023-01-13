@@ -10,10 +10,6 @@ class DetailOrder extends Model
     use HasFactory;
     protected $fillable = [
         'orderId',
-        'status',
-        'alamat',
-        'regionId',
-        'totalBayar',
-        'payment_id'
+        
     ];
 }

@@ -30,7 +30,7 @@
                             class="fas fa-bell me-2"></i>Status</a>
                     <a href="{{ url('/view_history') }}" class="nav-item nav-link"><i
                             class="fas fa-history me-2"></i>History</a>
-                    <a href="{{ url('/view_settings') }}" class="nav-item nav-link"><i class="fas fa-wrench me-2"></i>Settings</a>
+                    {{-- <a href="{{ url('/view_settings') }}" class="nav-item nav-link"><i class="fas fa-wrench me-2"></i>Settings</a> --}}
                 </div>
             </nav>
         </div>
