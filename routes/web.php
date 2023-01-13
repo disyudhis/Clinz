@@ -42,6 +42,7 @@ Route::get('/pengiriman/{order}', [OrderController::class, 'show'])->name('pengi
 Route::post('/updateOrder/{order}', [OrderController::class, 'update'])->name('updateOrder');
 Route::get('/status', [OrderController::class, 'getAllStatus'])->name('status.list');
 Route::get('/order_destroy/{id}', [OrderController::class, 'destroy'])->name('order_destroy');
+// Route::get('/form-pengiriman', [OrderController::class, 'create'])->name('createPengiriman');
 
 
 // DetailOrder Controller

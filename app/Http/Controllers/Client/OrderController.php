@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Models\Orders;
+use App\Models\Region;
 use App\Models\DetailOrder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -17,6 +18,13 @@ class OrderController extends Controller
         return view('client.order');
     }
 
+
+    // public function create()
+    // {
+    //     # code...
+    //     $regions = Region::get();
+    //     return view('client.pengiriman', compact('regions'));
+    // }
     public function store(Request $request)
     {
         $request->validate(
@@ -61,9 +69,10 @@ class OrderController extends Controller
         return redirect()->route('view_status')->with('status', 'Pesanan berhasil');
     }
 
-    public function show(Orders $order)
+    public function show(Orders $order, Region $region)
     {
-        return view('client.pengiriman', compact('order'));
+        $region = Region::get();
+        return view('client.pengiriman', compact('order', 'region'));
     }
 
     public function update(Request $request, Orders $order)
@@ -87,6 +96,8 @@ class OrderController extends Controller
             'payment_id' => $request->payment_id,
             'status' => 2
         ]);
+
+        // Region::get()
 
         return redirect()->route('view_status')->with('status', 'Pembayaran berhasil');
         // return view('client.status');
