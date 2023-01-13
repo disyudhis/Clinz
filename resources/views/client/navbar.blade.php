@@ -7,18 +7,6 @@
     </a>
 
     <div class="navbar-nav align-items-center ms-auto">
-        {{-- <div class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="fas fa-cart-plus"></i>
-                <span class="d-none d-lg-inline-flex">Cart</span>
-            </a>
-        </div>
-        <div class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="fa fa-bell me-lg-2"></i>
-                <span class="d-none d-lg-inline-flex">Notification</span>
-            </a>
-        </div> --}}
         <div class="nav-item my-4">
             <x-app-layout>
 

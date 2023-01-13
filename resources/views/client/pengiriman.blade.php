@@ -61,7 +61,13 @@
                                             <option value="-1" @if (old('regionId', $order->regionId) == -1) selected @endif>
                                                 Pilih
                                                 daerah</option>
-                                            <option value="1" @if (old('regionId', $order->regionId) == 1) selected @endif>
+                                            @foreach ($region as $region)
+                                                @if ($region->id == old('regionId'))
+                                                    <option value="{{ $region->id }}" selected>
+                                                        {{ $region->nama }}</option>
+                                                @endif
+                                            @endforeach
+                                            {{-- <option value="1" @if (old('regionId', $order->regionId) == 1) selected @endif>
                                                 Cipagalo</option>
                                             <option value="2" @if (old('regionId', $order->regionId) == 2) selected @endif>
                                                 Bojongsoang</option>
@@ -71,14 +77,20 @@
                                             <option value="4" @if (old('regionId', $order->regionId) == 4) selected @endif>
                                                 Bojongloa</option>
                                             <option value="5" @if (old('regionId', $order->regionId) == 5) selected @endif>
-                                                Ciwastra</option>
+                                                Ciwastra</option> --}}
                                         </select>
                                     @elseif($order->status == 1)
                                         <select class="form-select" name="regionId" aria-label="Default select example">
                                             <option value="-1" @if (old('regionId', $order->regionId) == -1) selected @endif>
                                                 Pilih
                                                 daerah</option>
-                                            <option value="1" @if (old('regionId', $order->regionId) == 1) selected @endif>
+                                            @foreach ($region as $region)
+                                                {{-- @if ($region->id == old('regionId')) --}}
+                                                <option value="{{ $region->id }}">
+                                                    {{ $region->nama }}</option>
+                                                {{-- @endif --}}
+                                            @endforeach
+                                            {{-- <option value="1" @if (old('regionId', $order->regionId) == 1) selected @endif>
                                                 Cipagalo</option>
                                             <option value="2" @if (old('regionId', $order->regionId) == 2) selected @endif>
                                                 Bojongsoang</option>
@@ -88,7 +100,7 @@
                                             <option value="4" @if (old('regionId', $order->regionId) == 4) selected @endif>
                                                 Bojongloa</option>
                                             <option value="5" @if (old('regionId', $order->regionId) == 5) selected @endif>
-                                                Ciwastra</option>
+                                                Ciwastra</option> --}}
                                         </select>
                                     @endif
                                 </div>
