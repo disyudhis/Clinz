@@ -52,6 +52,7 @@
                         <thead>
                             <tr>
                                 <th class="text-center">No</th>
+                                <th class="text-center">Nama</th>
                                 <th class="text-center">Alamat</th>
                                 <th class="text-center">Daerah</th>
                                 <th class="text-center">Total Bayar</th>
@@ -63,23 +64,13 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- Footer Start -->
+                @include('client.footer')
+                <!-- Footer End -->
             </div>
         </div>
     </div>
-    </div>
-
-
-
-    </div>
-
-    <!-- Footer Start -->
-    @include('client.footer')
-    <!-- Footer End -->
-    </div>
     <!-- Content End -->
-
-
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -102,6 +93,10 @@
                         name: 'id'
                     },
                     {
+                        data: 'username',
+                        name: 'username'
+                    },
+                    {
                         data: 'alamat',
                         name: 'alamat'
                     },
@@ -121,7 +116,6 @@
                     {
                         data: 'action',
                         name: 'action',
-
                         orderable: false,
                         searchable: false
                     }

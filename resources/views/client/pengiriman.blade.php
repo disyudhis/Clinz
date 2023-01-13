@@ -96,7 +96,7 @@
                             <div class="row mb-3">
                                 <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" name="alamat" id="alamat" required value="{{ old('alamat', $order->alamat) }}"
+                                    <textarea class="form-control" name="alamat" id="alamat" value="{{ old('alamat', $order->alamat) }}"
                                         style="height: 150px;"></textarea>
                                 </div>
                             </div>

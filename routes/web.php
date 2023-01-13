@@ -41,6 +41,7 @@ Route::post('/order-store', [OrderController::class, 'store'])->name('orderStore
 Route::get('/pengiriman/{order}', [OrderController::class, 'show'])->name('pengiriman');
 Route::post('/updateOrder/{order}', [OrderController::class, 'update'])->name('updateOrder');
 Route::get('/status', [OrderController::class, 'getAllStatus'])->name('status.list');
+Route::get('/order_destroy/{id}', [OrderController::class, 'destroy'])->name('order_destroy');
 
 
 // DetailOrder Controller
