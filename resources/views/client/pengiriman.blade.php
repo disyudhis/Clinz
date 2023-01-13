@@ -50,70 +50,73 @@
             <div class="main-content">
                 <div class="col-sm-12 col-xl-12">
                     <div class="rounded h-100 p-4">
-                        <h1 class="fs-3 font-bold mb-4">Masukkan Pesanan</h1>
-                        <form method="POST" action="{{ route('orderStore') }}">
+                        {{-- <h1 class="fs-3 font-bold mb-4">Masukan Pesanan</h1> --}}
+                        {{-- <a href="{{ url('/view_order') }}" type="reset" class="btn btn-secondary col-sm-2">Back</a> --}}
+
+                        <form method="POST" action="{{ route('detailUpdate', $order->id) }}">
                             @csrf
+
+                            <h1 class="fs-5 my-4 font-bold">Pengiriman</h1>
                             <div class="row mb-3">
-                                <label for="jumlahAtasan" class="col-sm-2 col-form-label">Jumlah Atasan</label>
+                                <label for="daerah" class="col-sm-2 col-form-label">Daerah</label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control" id="jumlahAtasan" placeholder="0"
-                                        name="jumlahAtasan">
+                                    <select class="form-select" name="daerah" aria-label="Default select example">
+                                        <option selected>Pilih daerah</option>
+                                        <option value="1">Cipagalo</option>
+                                        <option value="2">Bojongsoang</option>
+                                        <option value="3">Buah Batu</option>
+                                        <option value="4">Bojongloa</option>
+                                        <option value="3">Ciwastra</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="jumlahBawahan" class="col-sm-2 col-form-label">Jumlah Bawahan</label>
+                                <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control" id="jumlahBawahan" placeholder="0"
-                                        name="jumlahBawahan">
+                                    <textarea class="form-control" placeholder="Tuliskan alamat mu" name="alamat" id="alamat" style="height: 150px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="totalBayar" class="col-sm-2 col-form-label">Total Bayar</label>
+                                <div class="col-sm-10">
+                                    <h1>Sekian
+                                    </h1>
+                                    {{-- <div class="input-group">
+                                        <span class="input-group-text">Rp</span>
+                                        <input type="text" name="totalBayar" class="form-control">
+                                        <span class="input-group-text">.00</span>
+                                    </div> --}}
                                 </div>
                             </div>
                             <fieldset class="row mb-3">
-                                <legend class="col-form-label col-sm-2 pt-0">Warna Pakaian</legend>
+                                <legend class="col-form-label col-sm-2 pt-0">Metode Pembayaran</legend>
                                 <div class="col-sm-10">
                                     <div class="form-check mb-2">
-                                        <input class="form-check-input" type="radio" name="warnaPakaian"
-                                            id="warnaPakaian1" value="1">
-                                        <label class="form-check-label" for="warnaPakaian1">
-                                            Berwarna ( + Rp.200/pcs)
+                                        <input class="form-check-input" type="radio" name="payments" id="bayar1"
+                                            value="1">
+                                        <label class="form-check-label" for="bayar1">
+                                            OVO
                                         </label>
                                     </div>
                                     <div class="form-check mb-2">
-                                        <input class="form-check-input" type="radio" name="warnaPakaian"
-                                            id="warnaPakaian2" value="2">
-                                        <label class="form-check-label" for="warnaPakaian2">
-                                            Tidak Berwarna
+                                        <input class="form-check-input" type="radio" name="payments" id="bayar2"
+                                            value="2">
+                                        <label class="form-check-label" for="bayar2">
+                                            ShopeePay
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="payments" id="bayar3"
+                                            value="3">
+                                        <label class="form-check-label" for="bayar3">
+                                            DANA
                                         </label>
                                     </div>
                                 </div>
                             </fieldset>
-                            <fieldset class="row mb-3">
-                                <legend class="col-form-label col-sm-2 pt-0">Paket Pewangi</legend>
-                                <div class="col-sm-10">
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="radio" name="paketPewangi"
-                                            id="paketPewangi1" value="1" >
-                                        <label class="form-check-label" for="paketPewangi1">
-                                            Paket Biasa
-                                        </label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="radio" name="paketPewangi"
-                                            id="paketPewangi2" value="2">
-                                        <label class="form-check-label" for="paketPewangi2">
-                                            Parfum ++ ( + Rp.300/pcs)
-                                        </label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="radio" name="paketPewangi"
-                                            id="paketPewangi3" value="3">
-                                        <label class="form-check-label" for="paketPewangi3">
-                                            Parfum ++ Ekspres ( + Rp.500/pcs)
-                                        </label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            {{-- <button type="submit" class="btn btn-primary col-sm-2">Selanjutnya</button> --}}
-                            <x-primary-button>{{ __('Submit') }}</x-primary-button>
+
+                            <button type="submit" class="btn btn-primary col-sm-2">Pesan</button>
+
                         </form>
                     </div>
                 </div>

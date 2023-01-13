@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use App\Models\Orders;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
-    public function index()
-    {
-
-    }
 
     public function update_order(Request $request, Orders $order)
     {
@@ -26,7 +25,6 @@ class AdminController extends Controller
     {
         $order = DB::table('Orders')->where('id', $id)->delete();
         return redirect('');
-
     }
 
     public function update_user(Request $request, User $user)
