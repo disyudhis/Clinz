@@ -32,7 +32,7 @@
                             class="fas fa-bell me-2"></i>Status</a>
                     <a href="{{ url('/view_history') }}" class="nav-item nav-link"><i
                             class="fas fa-history me-2"></i>History</a>
-                    <a href="#" class="nav-item nav-link"><i class="fas fa-wrench me-2"></i>Settings</a>
+
                 </div>
             </nav>
         </div>
@@ -49,14 +49,16 @@
             <div class="main-content">
                 <div class="container">
                     {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
+                    <h1 class="fs-3 font-bold my-4">Status Pembayaran</h1>
                     <table class="table table-bordered myTable">
                         <thead>
                             <tr>
-                                <th>No</th>
-                                <th>Alamat</th>
-                                <th>Total Bayar</th>
-                                <th>Status</th>
-
+                                <th class="text-center">No</th>
+                                <th class="text-center">Alamat</th>
+                                <th class="text-center">Daerah</th>
+                                <th class="text-center">Total Bayar</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody class="text-center">
@@ -69,7 +71,22 @@
     </div>
 
 
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.js"></script>
+
+    </div>
+
+    <!-- Footer Start -->
+    @include('client.footer')
+    <!-- Footer End -->
+    </div>
+    <!-- Content End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    @include('client.script')
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -89,6 +106,10 @@
                     {
                         data: 'alamat',
                         name: 'alamat'
+                    },
+                    {
+                        data: 'regionId',
+                        name: 'regionId'
                     },
                     {
                         data: 'totalBayar',
@@ -111,23 +132,7 @@
             })
         })
     </script>
-    </div>
-
-    <!-- Footer Start -->
-    @include('client.footer')
-    <!-- Footer End -->
-    </div>
-    <!-- Content End -->
-
-
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-
     <!-- JavaScript Libraries -->
-    @include('client.script')
 </body>
 
 </html>

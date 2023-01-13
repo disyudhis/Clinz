@@ -49,28 +49,5 @@ class DetailOrderController extends Controller
         return redirect()->route('view_status')->with('status', 'Pengiriman berhasil');
     }
 
-    public function update(Request $request, Orders $detail)
-    {
-        $request->validate(
-            [
-                'daerah' => ['required', 'numeric', 'gt:0'],
-                'alamat' => ['required', 'max:255'],
-                'payments' => ['required', 'numeric'],
-            ],
-            [
-                'daerah.gt' => 'Pilih daerah terdekatmu!',
-                'alamat' => 'Tulis alamat tujuanmu!',
-                'payments' => 'Pilih metode pembayaran'
-            ]
-        );
-
-        $detail->update([
-            'daerah' => $request->regionId,
-            'alamat' => $request->alamat,
-            'payments' => $request->paymentId,
-            'status' => 1
-        ]);
-
-        return view('client.home');
-    }
+    
 }

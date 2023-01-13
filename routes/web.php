@@ -38,10 +38,12 @@ Route::get('/delete_user', [AdminController::class, 'delete_user']);
 // OrderController
 Route::get('/view_order', [OrderController::class, 'index']);
 Route::post('/order-store', [OrderController::class, 'store'])->name('orderStore');
+Route::get('/pengiriman/{order}', [OrderController::class, 'show'])->name('pengiriman');
+Route::post('/updateOrder/{order}', [OrderController::class, 'update'])->name('updateOrder');
+Route::get('/status', [OrderController::class, 'getAllStatus'])->name('status.list');
 
 
 // DetailOrder Controller
-Route::get('/pengiriman', [DetailOrderController::class, 'index'])->name('pengiriman');
 Route::post('/detail-store', [DetailOrderController::class, 'store'])->name('detailStore');
 Route::post('/update', [DetailOrderController::class, 'update'])->name('detailUpdate');
 // Route::get('/', [])

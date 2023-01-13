@@ -1,7 +1,7 @@
 <div class="sidebar pe-4 pb-3">
     <nav class="navbar bg-light navbar-light">
         <a href="index.html" class="navbar-brand mx-4 mb-3">
-            <a href="home.html"><img src="home/assets/img/logo/mesin.png" alt=""></a>
+            <a href="home.html"><img src="{{ asset('home/assets/img/logo/mesin.png') }}" alt=""></a>
             {{-- <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Clinz Laundry</h3> --}}
         </a>
         <div class="d-flex align-items-center ms-4 mb-4">
@@ -14,7 +14,6 @@
             <a href="{{ url('/view_status') }}" class="nav-item nav-link"><i class="fas fa-bell me-2"></i>Status</a>
             <a href="{{ url('/view_history') }}" class="nav-item nav-link"><i
                     class="fas fa-history me-2"></i>History</a>
-            <a href="{{ url('/view_settings') }}" class="nav-item nav-link"><i class="fas fa-wrench me-2"></i>Settings</a>
         </div>
     </nav>
 </div>
