@@ -114,7 +114,7 @@ class OrderController extends Controller
                 END) as status
                  '),
             )
-            ->where('o.username', auth()->user()->username)
+            // ->where('o.username', auth()->user()->username)
             ->orderBy('id', 'asc')
             ->get();
 
