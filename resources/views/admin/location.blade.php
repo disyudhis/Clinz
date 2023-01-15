@@ -74,6 +74,7 @@
                         serverSide: false,
                         fixedHeader: true,
                         deferRender: true,
+                        responsive: true,
                         type: 'GET',
                         destroy: true,
                         paging: true,
@@ -97,6 +98,8 @@
                 })
             </script>
             <!-- End custom js for this page -->
+        </div>
+    </div>
 </body>
 
 </html>

@@ -26,13 +26,10 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/view_status', [ClientController::class, 'view_status'])->name('view_status');
 Route::get('/view_dashboard', [ClientController::class, 'view_dashboard']);
 Route::get('/view_history', [ClientController::class, 'view_history']);
+Route::get('/history', [ClientController::class, 'getAllStatus'])->name('history');
 Route::get('/view_settings', [ClientController::class, 'view_settings']);
 
 // admin
-// Route::get('/', [AdminController::class, 'index']);
-// Route::get('/update_order', [AdminController::class, 'update_order']);
-// Route::get('/delete_order', [AdminController::class, 'delete_order']);
-
 Route::get('/location', [AdminController::class, 'create_location'])->name('location');
 Route::post('/store', [AdminController::class, 'store'])->name('storeLocation');
 Route::get('/getAllDaerah', [AdminController::class, 'getAllDaerah'])->name('getAllDaerah');

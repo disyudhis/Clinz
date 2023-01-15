@@ -38,7 +38,7 @@
                         </table>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>
@@ -61,6 +61,7 @@
                     serverSide: false,
                     fixedHeader: true,
                     deferRender: true,
+                    responsive: true,
                     type: 'GET',
                     destroy: true,
                     paging: true,

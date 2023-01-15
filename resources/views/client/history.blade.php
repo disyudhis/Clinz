@@ -45,7 +45,37 @@
             <!-- Navbar End -->
 
             {{-- Content Dashboard --}}
-
+            <div class="main-content">
+                <h1 class="m-3 fs-3 font-bold">History</h1>
+                @foreach ($status as $status)
+                    <div class="card w-full mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3 font-bold">{{ $status->username }}</h5>
+                            <h5 class="card-text fs-5 text-success">{{ $status->status }}</h5>
+                            <div class="row mt-2">
+                                <div class="col text-start">Alamat : </div>
+                                <div class="col text-end">{{ $status->alamat }}</div>
+                            </div>
+                            <li class="dropdown-divider"></li>
+                            <div class="row mt-2">
+                                <div class="col text-start">Harga : </div>
+                                <div class="col text-end font-bold">Rp. {{ $status->totalBayar }}</div>
+                            </div>
+                            <li class="dropdown-divider"></li>
+                            <div class="row mt-2">
+                                <div class="col text-start">Tanggal : </div>
+                                <div class="col text-end">{{ $status->created_at }}</div>
+                            </div>
+                            <li class="dropdown-divider"></li>
+                            <div class="row mt-2">
+                                <div class="col text-start">Pembayaran via :</div>
+                                <div class="col text-end">{{ $status->payment_id }}</div>
+                            </div>
+                            </ul>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
 
 
             <!-- Footer Start -->

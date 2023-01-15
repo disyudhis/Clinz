@@ -132,7 +132,6 @@ class OrderController extends Controller
 
         return DataTables::of($order)
             ->addColumn('action', function ($order) {
-
                 $btn = '<a type="button" href="' . url('/pengiriman') . "/" . $order->id . '" style="padding: 3px 20px" class="btn btn-primary">Bayar</a>
                     <a type="button" href="' . url('order_destroy') . "/" . $order->id . '" style="padding: 3px 20px" class="btn btn-secondary">Hapus</a>';
                 return $btn;

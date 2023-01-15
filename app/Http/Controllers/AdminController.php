@@ -31,7 +31,9 @@ class AdminController extends Controller
                 'id as id',
                 'username as username',
                 'email as email',
-                'usertype as usertype'
+                DB::raw('(CASE WHEN usertype = 1 THEN "Admin"
+                WHEN usertype = 0 THEN "User" END) as usertype')
+                // 'usertype as usertype'
             )
             ->get();
 
@@ -41,8 +43,6 @@ class AdminController extends Controller
                 return $btn;
             })
             ->make(true);
-
-
     }
 
     public function createUser()
@@ -125,6 +125,7 @@ class AdminController extends Controller
             })
             ->make(true);
     }
+
     public function deleteDaerah($id)
     {
         $region = DB::table('regions')->where('id', $id)->delete();

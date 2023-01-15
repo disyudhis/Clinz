@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,20 +24,21 @@
                             <nav>
                                 <ul id="navigation">
                                     <li class="active" id="btn"><a href="#">Beranda</a></li>
-                                    <li  class="active" ><a href="#about">Tentang Kami</a></li>
-                                    <li class="active" ><a href="#services">Layanan</a></li>
-                                    <li  class="active" ><a href="#map">Lokasi</a></li>
+                                    <li class="active"><a href="#about">Tentang Kami</a></li>
+                                    <li class="active"><a href="#services">Layanan</a></li>
+                                    <li class="active"><a href="#map">Lokasi</a></li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                 </div>
-                <div class="header-right d-none d-lg-block">
-                    <a class="header-btn2" id="logincss" href="{{ route('login') }}">Mulai</a>
-                </div>
+                {{-- <div class="header-right d-none d-lg-block">
+                    <a class="header-btn2" id="navigation" href="{{ route('login') }}">Mulai</a>
+                </div> --}}
                 <!-- Mobile Menu -->
                 <div class="col-12">
-                    <div class="mobile_menu d-block d-lg-none"></div>
+                    <div class="mobile_menu d-block d-lg-none">
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,5 +46,5 @@
     </header>
 </body>
 <script src="header/active_navbar"></script>
-</html>
 
+</html>

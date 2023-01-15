@@ -20,8 +20,8 @@
                     {{-- <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Clinz Laundry</h3> --}}
                 </a>
 
-                    {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
-        <div class="d-flex align-items-center ms-4 mb-4">
+                {{-- <h2 class="mb-4">Tabel Daftar Pengguna</h2> --}}
+                <div class="d-flex align-items-center ms-4 mb-4">
                 </div>
                 <div class="navbar-nav w-100 mt-14">
                     <a href="{{ url('/view_dashboard') }}" class="nav-item nav-link"><i
@@ -82,14 +82,17 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('.myTable').DataTable({
+                ajax: "{{ route('status.list') }}",
                 processing: true,
                 serverSide: false,
                 fixedHeader: true,
+                responsive: true,
                 deferRender: true,
+                // scroller: true,
+                // scrollX: 200,
                 type: 'GET',
                 destroy: true,
                 paging: true,
-                ajax: "{{ route('status.list') }}",
                 columns: [{
                         data: 'id',
                         name: 'id'
