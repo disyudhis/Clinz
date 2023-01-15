@@ -30,7 +30,7 @@ class ClientController extends Controller
                 DB::raw('(CASE WHEN o.status = 1 THEN "Belum Dibayar"
                 WHEN o.status = 2 THEN "Sedang Dikerjakan" 
                 WHEN o.status = 3 THEN "Sudah Selesai" END) as status'),
-                'o.created_at as created_at',
+                'o.updated_at as updated_at',
                 'p.method as payment_id'
             )
             ->join('users as u', 'u.id', '=', 'o.user_id')

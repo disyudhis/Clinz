@@ -64,7 +64,7 @@
                             <li class="dropdown-divider"></li>
                             <div class="row mt-2">
                                 <div class="col text-start">Tanggal : </div>
-                                <div class="col text-end">{{ $status->created_at }}</div>
+                                <div class="col text-end">{{ $status->updated_at }}</div>
                             </div>
                             <li class="dropdown-divider"></li>
                             <div class="row mt-2">
